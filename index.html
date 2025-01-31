@@ -23,6 +23,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        yellow: '#F9DF8A'
                     }
                 }
             }
@@ -35,11 +36,13 @@
             font-weight: 400;
             font-style: normal;
         }
+
         .adlam-font {
             font-family: "ADLaM Display", serif;
             font-weight: 400;
             font-style: normal;
         }
+
         .sora-font {
             font-family: "Sora", serif;
             font-optical-sizing: auto;
@@ -87,11 +90,62 @@
     <!-- main  -->
     <main class="container mx-auto md:px-32 px-5">
         <!-- banner  -->
-        <section class="bg-[url('./assets/cat-big.png')] min-h-[620px] lg:h-[768px] w-full bg-contain bg-center bg-no-repeat ">
+        <section
+            class="bg-[url('./assets/cat-big.png')] min-h-[620px] lg:h-[768px] w-full bg-contain bg-center bg-no-repeat ">
             <h1 class="text-3xl md:text-6xl my-5">Pamper Your Pet,<br> Because They Deserve <br> the Best</h1>
-            <p class="sora-font lg:w-1/2 my-5 text-gray-600">Discover a world of treats, toys, and essentials handpicked for your
+            <p class="sora-font lg:w-1/2 my-5 text-gray-600">Discover a world of treats, toys, and essentials handpicked
+                for your
                 furry friends. Shop now and make tails wag with joy!</p>
             <button class="btn-primary">Find A Pet</button>
+        </section>
+        <!-- -- Browse Section --  -->
+        <section>
+            <h3 class=" text-3xl md:text-5xl my-12">Browse By Categories</h3>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-5 mb-10">
+                <div class="flex items-center justify-center flex-col bg-yellow px-12 py-9 rounded-lg">
+                    <div class="p-3 bg-white rounded-full">
+                        <img src="./assets/dog-cartoon.png" alt="">
+                    </div>
+                    <h5 class="text-2xl my-3">Dog</h5>
+                    <h6 class="sora-font">3 item</h6>
+                </div>
+                <div class="flex items-center justify-center flex-col bg-yellow px-12 py-9 rounded-lg">
+                    <div class="p-3 bg-white rounded-full">
+                        <img src="./assets/fish-cartoon.png" alt="">
+                    </div>
+                    <h5 class="text-2xl my-3">Fish</h5>
+                    <h6 class="sora-font">3 item</h6>
+                </div>
+                <div class="flex items-center justify-center flex-col bg-yellow px-12 py-9 rounded-lg">
+                    <div class="p-3 bg-white rounded-full">
+                        <img src="./assets/cat-cartoon.png" alt="">
+                    </div>
+                    <h5 class="text-2xl my-3">Cat</h5>
+                    <h6 class="sora-font">3 item</h6>
+                </div>
+                <div class="flex items-center justify-center flex-col bg-yellow px-12 py-9 rounded-lg">
+                    <div class="p-3 bg-white rounded-full">
+                        <img src="./assets/bird-cartoon.png" alt="">
+                    </div>
+                    <h5 class="text-2xl my-3">Birds</h5>
+                    <h6 class="sora-font">3 item</h6>
+                </div>
+                <div class="flex items-center justify-center flex-col bg-yellow px-12 py-9 rounded-lg">
+                    <div class="p-3 bg-white rounded-full">
+                        <img src="./assets/mouse-cartoon.png" alt="">
+                    </div>
+                    <h5 class="text-2xl my-3">mouse</h5>
+                    <h6 class="sora-font">3 item</h6>
+                </div>
+                <div class="flex items-center justify-center flex-col bg-yellow px-12 py-9 rounded-lg">
+                    <div class="p-3 bg-white rounded-full">
+                        <img src="./assets/rabbit-cartoon.png" alt="">
+                    </div>
+                    <h5 class="text-2xl my-3">Dog</h5>
+                    <h6 class="sora-font">3 item</h6>
+                </div>
+            </div>
         </section>
     </main>
 
