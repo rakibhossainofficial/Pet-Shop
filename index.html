@@ -15,29 +15,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
         integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
     <style>
         body {
             font-family: "ADLaM Display", serif;
             font-weight: 400;
             font-style: normal;
         }
-
         .adlam-font {
             font-family: "ADLaM Display", serif;
             font-weight: 400;
             font-style: normal;
         }
-
         .sora-font {
             font-family: "Sora", serif;
             font-optical-sizing: auto;
             font-weight: 400;
             font-style: normal;
-        }
-
-        :root {
-            --text-1: #111;
-            --text-2: #ffff;
         }
 
         .btn-primary {
@@ -52,34 +59,42 @@
 <body>
     <!-- -- header --  -->
 
-    <header class="sora-font flex items-center justify-between bg-[#FFF9F4]  p-5 text-[#111111]">
+    <header class=" border-b md:border-none border-black sora-font  bg-[#FFF9F4]   text-[#111111] px-5">
+        <div class=" flex items-center md:px-32 py-5 justify-between container mx-auto">
 
-        <div class="logo flex text-center items-center justify-center gap-3">
-            <img src="./assets/logo-header.png" alt="logo">
-            <p class="text-[20px]">Browse <span class="text-[#FFDC26]">4</span>Pets</p>
-        </div>
-        <nav class="hidden md:block">
-            <ul class="flex items-center justify-center gap-5 text-[20px] ">
-                <li class="cursor-pointer">Find a pet</li>
-                <li class="cursor-pointer">Breeds</li>
-                <li class="cursor-pointer">Contact us</li>
-            </ul>
-        </nav>
-        <div class=" flex items-center justify-between gap-5 text-[20px]">
-            <i class="ri-notification-line hidden md:block"></i>
-            <i class="ri-search-line hidden md:block"></i>
-            <button class="hidden md:block btn-primary bg-transparent border-2 border-[#FFDC26]">Login</button>
-            <button class="hidden md:block btn-primary">Register</button>
-            <i class="ri-menu-line md:hidden "></i>
+            <div class="logo flex text-center items-center justify-center gap-3">
+                <img src="./assets/logo-header.png" alt="logo">
+                <p class="text-[20px]">Browse <span class="text-[#FFDC26]">4</span>Pets</p>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex items-center justify-center gap-5 text-[20px] ">
+                    <li class="cursor-pointer">Find a pet</li>
+                    <li class="cursor-pointer">Breeds</li>
+                    <li class="cursor-pointer">Contact us</li>
+                </ul>
+            </nav>
+            <div class=" flex items-center justify-between gap-5 text-[20px]">
+                <i class="ri-notification-line hidden md:block"></i>
+                <i class="ri-search-line hidden md:block"></i>
+                <button class="hidden md:block btn-primary bg-transparent border-2 border-[#FFDC26]">Login</button>
+                <button class="hidden md:block btn-primary">Register</button>
+                <i class="ri-menu-line md:hidden "></i>
+            </div>
         </div>
 
     </header>
 
     <!-- main  -->
-     <main>
+    <main class="container mx-auto md:px-32 px-5">
         <!-- banner  -->
-       
-     </main>
+        <section class="bg-[url('./assets/cat-big.png')] min-h-[620px] lg:h-[768px] w-full bg-contain bg-center bg-no-repeat ">
+            <h1 class="text-3xl md:text-6xl my-5">Pamper Your Pet,<br> Because They Deserve <br> the Best</h1>
+            <p class="sora-font lg:w-1/2 my-5 text-gray-600">Discover a world of treats, toys, and essentials handpicked for your
+                furry friends. Shop now and make tails wag with joy!</p>
+            <button class="btn-primary">Find A Pet</button>
+        </section>
+    </main>
+
 </body>
 
 </html>
