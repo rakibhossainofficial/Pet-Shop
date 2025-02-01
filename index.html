@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
         integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- -- Daisy Ui Cdn --  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
         tailwind.config = {
@@ -337,24 +339,25 @@
     </section>
 
     <!-- -- Low Price Section --  -->
-    <section class="md:px-32  container py-5 mx-auto px-5">
+    <section class="md:px-32  container py-5 mx-auto px-5 mb-96  lg:mb-72">
         <h3 class=" text-3xl md:text-5xl my-12">Everyday low Price</h3>
         <div class="flex flex-col lg:flex-row gap-5">
 
-            <div class="flex items-center justify-between bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] lg:w-3/5 rounded-lg p-3 ">
+            <div
+                class="flex items-center justify-between bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] lg:w-3/5 rounded-lg p-3 ">
                 <div class="pl-9">
                     <p class="sora-font">Under Price</p>
                     <h4 class="text-2xl md:text-3xl my-4">Pet Grooming Mitt</h4>
                     <h5 class="text-white my-5">(Easy Hair Removal)</h5>
                     <p class="text-5xl">$7.99</p>
                 </div>
-                <img class="w-48 lg:w-80" src="./assets/cute-dog-mid.png"  alt="">
+                <img class="w-48 lg:w-80" src="./assets/cute-dog-mid.png" alt="">
             </div>
-            
+
             <div class=" relative bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] xl:w-[40%] rounded-lg p-5 min-h-[400px]">
                 <h4 class="text-3xl">T-shirt For Dogs</h4>
                 <p class="my-5 text-6xl text-[#FFDC26]">$7.99</p>
-               
+
                 <div class="absolute bottom-0 right-0">
                     <img class="bottom right" src="./assets/cute-pet-small.png" alt="">
                 </div>
@@ -363,25 +366,69 @@
     </section>
 
     <!-- -- Subscribe Section --  -->
+    
 
-    <section class="md:px-32  container py-5 mx-auto px-5 ">
-        <div class="flex flex-col lg:flex-row items-center justify-center lg:items-start lg:justify-start gap-5 bg-[#FFF9F4] rounded-lg p-5">
-            <div>
-                <img class=" lg:w-80" src="./assets/cute-pet-mid.png" alt="">
-            </div>
+    <!-- -- footer Section --  -->
 
-            <div class="text-center lg:text-start">
-                <h3 class=" text-3xl md:text-5xl mb-5  lg:mt-12">Get Awsome News!</h3>
-                <p class="sora-font">Exclusive training tips, ticks, product deals and more.</p>
-                <form class="sora-font">
-                    <input class="block px-8 py-4 border w-[100%] my-6 rounded-md" type="email" placeholder="Enter email...." required name="" id="">
-                    <button class="btn-primary ">Subscribe</button>
-                </form>
+    <footer class="bg-[#FFDC2680] px-5 md:px-0 relative ">
+        <!-- -- Subscribe Section --  -->
+       
+        <section class="md:px-32  container py-5 mx-auto px-5 absolute bottom-96 left-1/2 -translate-x-1/2 mb-40 md:mb-0">
+            <div class="flex flex-col lg:flex-row items-center justify-center lg:items-start lg:justify-start gap-5 bg-[#FFF9F4] rounded-lg p-5 ">
+                <div>
+                    <img class=" w-[190px] lg:w-80" src="./assets/cute-pet-mid.png" alt="">
+                </div>
+    
+                <div class="text-center lg:text-start">
+                    <h3 class=" text-3xl md:text-5xl mb-5  lg:mt-12">Get Awsome News!</h3>
+                    <p class="sora-font">Exclusive training tips, ticks, product deals and more.</p>
+                    <form class="sora-font">
+                        <input class="block px-8 py-4 border w-[100%] my-6 rounded-md" type="email"
+                            placeholder="Enter email...." required name="" id="">
+                        <button class="btn-primary ">Subscribe</button>
+                    </form>
+                </div>
             </div>
+        </section>
+        
+        <div class="md:px-32  container mx-auto footer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  text-base-content py-24 sora-font pt-96">
+
+            <nav class="text-black">
+                <div class="logo flex text-center items-center justify-center gap-3">
+                    <img src="./assets/footer logo.svg" alt="logo">
+                    <p class="text-[20px]">Browse <span class="text-[#FFDC26]">4</span>Pets</p>
+                </div>
+                <p>Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
+            </nav>
+            <nav class="text-black">
+                <a class="link link-hover">Find A Pet</a>
+                <a class="link link-hover my-4">Breeds</a>
+                <a class="link link-hover">Contact Us</a>
+            </nav>
+            <nav class="text-black ">
+                <h6 class="footer-title">Follow Us</h6>
+                <div class="grid grid-flow-col gap-4 ">
+
+                    <a href="#">
+                        <i class="ri-facebook-circle-fill text-3xl"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="ri-instagram-line text-3xl"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="ri-linkedin-box-fill text-3xl"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="ri-youtube-fill text-3xl"></i>
+                    </a>
+                </div>
+            </nav>
 
         </div>
-    </section>
-
+    </footer>
 
 </body>
 
