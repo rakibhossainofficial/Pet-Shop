@@ -18,7 +18,9 @@
     <!-- -- Daisy Ui Cdn --  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- -- favicon --  -->
+     <link rel="shortcut icon" href="./assets/logo-header.png" type="image/x-icon">
+     
     <script>
         tailwind.config = {
             theme: {
@@ -57,7 +59,16 @@
             border-radius: 8px;
             background-color: #FFDC26;
             color: black;
+            transition: 0.3s;
         }
+        .btn-primary:active{
+            transform: scale(1.1);
+        }
+        .btn-primary:hover{
+            background-color: #ebcf44;
+        }
+
+
     </style>
 </head>
 
@@ -69,18 +80,18 @@
 
             <div class="logo flex text-center items-center justify-center gap-3">
                 <img class="animate-pulse" src="./assets/logo-header.png" alt="logo">
-                <p class="text-[20px]">Browse <span class="text-[#FFDC26]">4</span>Pets</p>
+                <p class="text-[20px] font-bold">Browse <span class="text-[#FFDC26]">4</span>Pets</p>
             </div>
             <nav class="hidden lg:block">
-                <ul class="flex items-center justify-center gap-5 text-[20px] ">
-                    <li class="cursor-pointer">Find a pet</li>
-                    <li class="cursor-pointer">Breeds</li>
-                    <li class="cursor-pointer">Contact us</li>
+                <ul class="flex items-center justify-center gap-5 text-[18px] ">
+                    <li class="cursor-pointer hover:text-[#86771e]">Find a pet</li>
+                    <li class="cursor-pointer hover:text-[#86771e]">Breeds</li>
+                    <li class="cursor-pointer hover:text-[#86771e]">Contact us</li>
                 </ul>
             </nav>
             <div class=" flex items-center justify-between gap-5 text-[20px]">
-                <i class="ri-notification-line hidden xl:block"></i>
-                <i class="ri-search-line hidden xl:block"></i>
+                <i class="ri-notification-line hidden xl:block cursor-pointer"></i>
+                <i class="ri-search-line hidden xl:block cursor-pointer"></i>
                 <button class="hidden xl:block btn-primary bg-transparent border-2 border-[#FFDC26]">Login</button>
                 <button class="hidden xl:block btn-primary">Register</button>
                 <i class="ri-menu-line xl:hidden "></i>
@@ -93,26 +104,26 @@
     <main class="container mx-auto md:px-32 px-5">
         <!-- banner  -->
         <section
-            class="bg-[url('./assets/cat-big.png')] min-h-[540px] lg:h-[768px] w-full bg-contain bg-center bg-no-repeat  ">
-            <h1 class="text-3xl md:text-6xl my-5">Pamper Your Pet,<br> Because They Deserve <br> the Best</h1>
+            class="bg-[url('./assets/cat-big.png')] min-h-[550px] lg:h-[768px] w-full bg-contain bg-center bg-no-repeat  ">
+            <h1 class="text-3xl md:text-6xl my-5 mt-16">Pamper Your Pet,<br> Because They Deserve <br> the Best</h1>
             <p class="sora-font lg:w-1/2 my-5 text-gray-600">Discover a world of treats, toys, and essentials handpicked
                 for your
                 furry friends. Shop now and make tails wag with joy!</p>
-            <button class="btn-primary animate-bounce">Find A Pet</button>
+            <button class="btn-primary animate-bounce mt-5">Find A Pet</button>
         </section>
         <!-- -- About Us --  -->
-        <section class="bg-[#FFF9F4] flex flex-col lg:flex-row justify-center items-center p-5 rounded-lg my-9 py-14">
+        <section class="bg-[#FFF9F4] flex flex-col-reverse lg:flex-row justify-center items-center p-5 rounded-lg mb-9 py-14">
             <div>
-                <h3 class="text-5xl">About Us</h3>
+                <h3 class="text-4xl">About Us</h3>
                 <p class=" my-5 sora-font"> We help you find the perfect furry friend! From playful puppies to adorable kittens, we have loving
                     pets ready for a forever home. Visit us and meet your new best friend today!</p>
-                <button class="btn-primary">Learn More</button>
+                <button class="btn-primary sora-font">Learn More</button>
             </div>
             <img class="w-[450px] rounded-lg" src="./assets/About -us.png" alt="">
         </section>
         <!-- -- Browse Section --  -->
         <section>
-            <h3 class=" text-3xl md:text-5xl mb-12">Browse By Categories</h3>
+            <h3 class=" text-3xl md:text-4xl mb-12">Browse By Categories</h3>
 
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5 mb-10">
                 <div class="flex items-center justify-center flex-col bg-yellow px-12 py-9 rounded-lg">
@@ -163,16 +174,16 @@
     </main>
 
     <!-- -- Trending Section --  -->
-    <section class="bg-[#FFF9F4] px-5 md:px-0 ">
+    <section class="bg-[#FFF9F4] px-5 md:px-0 py-20">
         <div class="md:px-32  container py-5 mx-auto">
-            <h3 class=" text-3xl md:text-5xl my-12">Trending Pet Products</h3>
+            <h3 class=" text-3xl md:text-4xl mb-12">Trending Pet Products</h3>
 
             <div class=" flex flex-col xl:flex-row gap-5">
                 <!-- -- box 1--  -->
                 <div class=" relative bg-yellow xl:w-4/12 rounded-lg p-5 min-h-[400px]">
-                    <h4 class="text-2xl ">T-shirt For Dogs</h4>
-                    <p class="text-gray-600 my-5">Discover a world of treats, toys, and essentials handpicked for</p>
-                    <button class="btn-primary bg-white">Shop Now</button>
+                    <h4 class="text-2xl font-bold ">T-shirt For Dogs</h4>
+                    <p class="text-gray-600 my-5 sora-font">Discover a world of treats, toys, and essentials handpicked for</p>
+                    <button class="btn-primary bg-white sora-font">Shop Now</button>
                     <div class="absolute bottom-0 right-0">
                         <img class="bottom right" src="./assets/cute-pet-small.png" alt="">
                     </div>
@@ -327,7 +338,7 @@
 
                     <!-- card -->
                     <div
-                        class="flex items-center justify-start gap-4 bg-white px-3 py-2 rounded-lg border border-[rgba(17, 17, 17, 0.10)]">
+                        class="flex items-center justify-start gap-4 bg-white px-3 py-2 rounded-lg border border-[rgba(17, 17, 17, 0.10)] hidden md:flex">
                         <!-- img  -->
                         <div class="p-2 bg-[#FFF9F4] rounded-md">
                             <img src="./assets/dog-cartoon.png" alt="">
@@ -350,14 +361,14 @@
 
     <!-- -- Low Price Section --  -->
     <section class="md:px-32  container py-5 mx-auto px-5 mb-96  lg:mb-72">
-        <h3 class=" text-3xl md:text-5xl my-12">Everyday low Price</h3>
+        <h3 class=" text-3xl md:text-4xl my-12">Everyday low Price</h3>
         <div class="flex flex-col lg:flex-row gap-5">
 
             <div
-                class="relative flex flex-col md:flex-row items-start md:items-center justify-between bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] lg:w-3/5 rounded-lg p-3 min-h-[334px]">
-                <div class="pl-9 ">
+                class="relative flex flex-col md:flex-row items-start md:items-center justify-between bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] lg:w-3/5 rounded-lg p-5 min-h-[334px]">
+                <div class=" md:pl-9 ">
                     <p class="sora-font hidden md:block">Under Price</p>
-                    <h4 class="text-2xl md:text-3xl my-4">Pet Grooming Mitt</h4>
+                    <h4 class="text-2xl md:text-3xl mb-5 md:mb-0  md:my-4 font-bold">Pet Grooming Mitt</h4>
                     <h5 class="text-white my-5 hidden md:block">(Easy Hair Removal)</h5>
                     <p class="text-5xl text-white md:text-black">$7.99</p>
                 </div>
@@ -377,7 +388,6 @@
         </div>
     </section>
 
-    <!-- -- Subscribe Section --  -->
 
 
     <!-- -- footer Section --  -->
@@ -394,7 +404,7 @@
                 </div>
 
                 <div class="text-center lg:text-start">
-                    <h3 class=" text-3xl md:text-5xl mb-5  lg:mt-12">Get Awsome News!</h3>
+                    <h3 class=" text-3xl md:text-4xl mb-5  lg:mt-12">Get Awsome News!</h3>
                     <p class="sora-font">Exclusive training tips, ticks, product deals and more.</p>
                     <form class="sora-font">
                         <input class="block px-8 py-4 border w-[100%] my-6 rounded-md" type="email"
