@@ -68,7 +68,7 @@
         <div class=" flex items-center md:px-32 py-5 justify-between container mx-auto">
 
             <div class="logo flex text-center items-center justify-center gap-3">
-                <img src="./assets/logo-header.png" alt="logo">
+                <img class="animate-pulse" src="./assets/logo-header.png" alt="logo">
                 <p class="text-[20px]">Browse <span class="text-[#FFDC26]">4</span>Pets</p>
             </div>
             <nav class="hidden lg:block">
@@ -98,7 +98,17 @@
             <p class="sora-font lg:w-1/2 my-5 text-gray-600">Discover a world of treats, toys, and essentials handpicked
                 for your
                 furry friends. Shop now and make tails wag with joy!</p>
-            <button class="btn-primary">Find A Pet</button>
+            <button class="btn-primary animate-bounce">Find A Pet</button>
+        </section>
+        <!-- -- About Us --  -->
+        <section class="bg-[#FFF9F4] flex flex-col lg:flex-row justify-center items-center p-5 rounded-lg my-9 py-14">
+            <div>
+                <h3 class="text-5xl">About Us</h3>
+                <p class=" my-5 sora-font"> We help you find the perfect furry friend! From playful puppies to adorable kittens, we have loving
+                    pets ready for a forever home. Visit us and meet your new best friend today!</p>
+                <button class="btn-primary">Learn More</button>
+            </div>
+            <img class="w-[450px] rounded-lg" src="./assets/About -us.png" alt="">
         </section>
         <!-- -- Browse Section --  -->
         <section>
@@ -344,14 +354,16 @@
         <div class="flex flex-col lg:flex-row gap-5">
 
             <div
-                class="flex items-center justify-between bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] lg:w-3/5 rounded-lg p-3 ">
-                <div class="pl-9">
-                    <p class="sora-font">Under Price</p>
+                class="relative flex flex-col md:flex-row items-start md:items-center justify-between bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] lg:w-3/5 rounded-lg p-3 min-h-[334px]">
+                <div class="pl-9 ">
+                    <p class="sora-font hidden md:block">Under Price</p>
                     <h4 class="text-2xl md:text-3xl my-4">Pet Grooming Mitt</h4>
-                    <h5 class="text-white my-5">(Easy Hair Removal)</h5>
-                    <p class="text-5xl">$7.99</p>
+                    <h5 class="text-white my-5 hidden md:block">(Easy Hair Removal)</h5>
+                    <p class="text-5xl text-white md:text-black">$7.99</p>
                 </div>
-                <img class="w-48 lg:w-80" src="./assets/cute-dog-mid.png" alt="">
+                <div class="w-fit absolute right-0 bottom-0 ">
+                    <img class="w-48 lg:w-80" src="./assets/cute-dog-mid.png" alt="">
+                </div>
             </div>
 
             <div class=" relative bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] xl:w-[40%] rounded-lg p-5 min-h-[400px]">
@@ -366,19 +378,21 @@
     </section>
 
     <!-- -- Subscribe Section --  -->
-    
+
 
     <!-- -- footer Section --  -->
 
     <footer class="bg-[#FFDC2680] px-5 md:px-0 relative ">
         <!-- -- Subscribe Section --  -->
-       
-        <section class="md:px-32  container py-5 mx-auto px-5 absolute bottom-96 left-1/2 -translate-x-1/2 mb-40 md:mb-0">
-            <div class="flex flex-col lg:flex-row items-center justify-center lg:items-start lg:justify-start gap-5 bg-[#FFF9F4] rounded-lg p-5 ">
+
+        <section
+            class="md:px-32  container py-5 mx-auto px-5 absolute bottom-96 left-1/2 -translate-x-1/2 mb-56 md:mb-0">
+            <div
+                class="flex flex-col lg:flex-row items-center justify-center lg:items-start lg:justify-start gap-5 bg-[#FFF9F4] rounded-lg p-5 ">
                 <div>
                     <img class=" w-[190px] lg:w-80" src="./assets/cute-pet-mid.png" alt="">
                 </div>
-    
+
                 <div class="text-center lg:text-start">
                     <h3 class=" text-3xl md:text-5xl mb-5  lg:mt-12">Get Awsome News!</h3>
                     <p class="sora-font">Exclusive training tips, ticks, product deals and more.</p>
@@ -390,8 +404,9 @@
                 </div>
             </div>
         </section>
-        
-        <div class="md:px-32  container mx-auto footer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  text-base-content py-24 sora-font pt-96">
+
+        <div
+            class="md:px-32  container mx-auto footer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  text-base-content py-24 sora-font pt-[410px]">
 
             <nav class="text-black">
                 <div class="logo flex text-center items-center justify-center gap-3">
